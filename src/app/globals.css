@@ -99,7 +99,7 @@ nav {
 
 
 .hero-content-container{
-  padding-top: 60px;
+  padding-top: 4.5rem;
   overflow: hidden;
 
 }
@@ -109,9 +109,13 @@ nav {
   font-family: 'Abril Fatface', serif;
   text-transform: capitalize;
   letter-spacing: 0.04em;
-  line-height: 117px;
-  font-size: 100px;
+  /* line-height: px; */
+  font-size: 80px;
   color: white;
+
+  @media screen and (min-width: 1800px) {
+    font-size: 100px;
+  }
 
 }
 
@@ -132,7 +136,11 @@ nav {
 }
 
 .hero-buffet{
-  margin: 3rem 0;
+  margin: 2rem 0;
+  
+  @media screen and (min-width: 1800px) {
+    margin: 3rem 0;
+  }
 }
 
 .hero-section p{
@@ -142,7 +150,10 @@ nav {
   font-family: var(--pop4);
 }
 
+.hero-section .hero-buffet-title{
+  font-family: 'Abril Fatface',serif;
 
+}
 
 
 .hero-buttons{
@@ -161,6 +172,7 @@ nav {
 }
 
 .hero-phone-number{
+  font-size: 3rem;
   color: white !important;
 }
 button{
@@ -182,6 +194,7 @@ button{
 }
 .hero-section .phone-icon{
   margin-left: 1rem;
+  color: white;
 }
 
 button:hover{

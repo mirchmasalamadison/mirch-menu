@@ -1,4 +1,4 @@
-import { Inter, Roboto, Abril_Fatface, Poppins } from "next/font/google";
+import {  Poppins } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -9,17 +9,6 @@ const poppins = Poppins({
   style: ["normal", "italic"],
 });
 
-const inter = Inter({ subsets: ["latin"] });
-
-const abril = Abril_Fatface({
-  weight: "400",
-  subsets: ["latin"],
-});
-
-const roboto = Roboto({
-  weight: ["100", "300", "400", "500", "700", "900"],
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Mirch Masala",
