@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeroDecoration from "../../public/assets/homeAssets/intro-decoration-hero.png";
 import Link from "next/link";
+import {  MdPhonelinkRing } from 'react-icons/md'
 
 const Hero = () => {
   return (
@@ -31,6 +32,10 @@ const Hero = () => {
           flavors! <br />
           Come enjoy a savory culinary experience during our lunch buffet,
           dinner, or takeout.
+          <br/>
+          <br/>
+          <Link href='tel:(608) 203-5387' className="hero-phone-container"><h3 className="hero-phone-number">(608) 203-5387 </h3> <MdPhonelinkRing fontSize={36} className="phone-icon" />
+          </Link>
         </p>
 
         <div className="hero-buttons">
@@ -38,11 +43,16 @@ const Hero = () => {
             <Link href='/menu'> <button className="hero-menu btn">Explore Menu</button></Link>
            
           </div>
-
+          <div className="hero-btn-container">
+          <Link href='tel:(608) 203-5387'><button className="hero-phone btn">Call Us</button></Link>
+     
+        
+          </div>
           <div className="hero-btn-container">
           <Link href='https://www.doordash.com/store/mirchmasala-madison-977240/'><button className="hero-doordash btn">Doordash</button></Link>
         
           </div>
+
         </div>
 
         {/* <div className="hero-divider">

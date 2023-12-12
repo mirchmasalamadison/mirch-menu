@@ -86,7 +86,7 @@ const Menu = () => {
     </div>
 
           <h3 className="dining-menu-heading">Dining</h3>
-          <p>Available during lunch, dinner, for takeout, and delivery.</p>
+          <p className="dining-menu-text">Available during lunch, dinner, for takeout, and delivery.</p>
 
       <div className="menu-category-map">
         {categories.map((category) => {
