@@ -2,10 +2,21 @@ import Image from "next/image";
 import HeroDecoration from "../../public/assets/homeAssets/intro-decoration-hero.png";
 import Link from "next/link";
 import {  MdPhonelinkRing } from 'react-icons/md'
+import bg from "../../public/assets/homeAssets/hero-paneer-tikka.jpeg";
+
+
+const sectionStyle = {
+    background: `linear-gradient(rgba(0, 15, 26, 0.4), rgba(0, 0, 0, 0.6)), url('./assets/homeAssets/hero-paneer-tikka.jpeg') no-repeat`,
+    backgroundSize: 'cover',
+    backgroundPosition: '25% 30%',
+}
 
 const Hero = () => {
   return (
-    <section className="hero-section">
+    <section 
+    style={sectionStyle}
+    
+    className="hero-section">
       <div className="hero-content-container">
         <Image
           src={HeroDecoration}

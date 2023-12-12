@@ -85,10 +85,6 @@ nav {
 .hero-section{
   height: 90vh; 
   position: relative;
-  background: linear-gradient( rgba(0, 15, 26, 0.4), rgba(0, 0, 0, 0.6) ), url('./assets/homeAssets/hero-paneer-tikka.jpeg') no-repeat;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 25% 30%;
   align-items: center;
   text-align: center;
   font-family: var(--pop4);
