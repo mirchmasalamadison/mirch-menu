@@ -2,7 +2,6 @@ import Image from "next/image";
 import HeroDecoration from "../../public/assets/homeAssets/intro-decoration-hero.png";
 import Link from "next/link";
 import {  MdPhonelinkRing } from 'react-icons/md'
-import bg from "../../public/assets/homeAssets/hero-paneer-tikka.jpeg";
 
 
 const sectionStyle = {
