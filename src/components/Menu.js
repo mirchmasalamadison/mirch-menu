@@ -48,6 +48,7 @@ const Menu = () => {
 
   return (
     <section className="menu-section">
+          <div className="menu-content-container">
       <Image
         src={HeroDecoration}
         width={200}
@@ -56,6 +57,10 @@ const Menu = () => {
         className=""
       />
 
+  
+
+
+     
       <h1 className="menu-heading">Our Menu</h1>
 
             <div className='menu-buffet-dropdown' onClick={() => setOpen(!open)}>
@@ -88,6 +93,9 @@ const Menu = () => {
           return <Category key={category.sectionName} category={category} />;
         })}
       </div>
+      </div>
+
+      {/* <div className="triangle"></div> */}
     </section>
   );
 };

@@ -2,16 +2,12 @@
 
 const FindUs = () => (
     <section className="findus-section">
-
+<h2 className="findus-heading"> Our Location</h2>
         <div className="findus-content-container">
-            <h2 className="findus-heading"> Our Location</h2>
-
-        </div>
-{/* 
-        <div className="findus-content-container">
-            <h2 className="findus-heading"> Our Location</h2>
+            
             <div className="findus-info">
-                <div className="findus-content">
+            
+                <div className="findus-content findus-div">
                     <h5 className="findus-subtitle" id='findus-address'>Address</h5>
                     <p className="findus-address">
                         439 Grand Canyon Drive <br />
@@ -25,28 +21,30 @@ const FindUs = () => (
                     <p className="findus-time">
                         <strong>Sunday: </strong> 9:00 AM - 09:30 PM
                     </p>
+                    <button className="btn" id='visit-us'>Visit Us</button>
                 </div>
 
-                <button className="btn" id='visit-us'>Visit Us</button>
+                
          
 
             </div>
 
-                  <div className="findus-map">
+                  <div className="findus-map findus-div">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d728.7987869975752!2d-89.49630034865798!3d43.05836305902823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8807af4540af43d5%3A0x76a6b4d70053914c!2sMirch%20Masala!5e0!3m2!1sen!2sus!4v1684418205480!5m2!1sen!2sus"
-          width="800"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11105.38740515816!2d-89.50329850098856!3d43.056879693272236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8807af4540af43d5%3A0x76a6b4d70053914c!2sMirch%20Masala!5e0!3m2!1sen!2sus!4v1702392688674!5m2!1sen!2sus"
+          width="650"
           title="findus"
-          height="450"
-          allowfullscreen=""
+          height="400"
+          allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="iframe"
         ></iframe>
       </div>
+        </div>
+        </section>
 
-        </div> */}
-
-  </section>
+  
 );
 
 export default FindUs;

@@ -13,6 +13,9 @@ export default function Home() {
       <Menu />
       <FindUs />
       <Footer />
+      {/* <div className="check">
+        C
+      </div> */}
     </>
   );
 }

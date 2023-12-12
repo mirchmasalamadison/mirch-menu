@@ -14,7 +14,6 @@ const inter = Inter({ subsets: ["latin"] });
 const abril = Abril_Fatface({
   weight: "400",
   subsets: ["latin"],
-  variable: "--abril",
 });
 
 const roboto = Roboto({
@@ -30,12 +29,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <style>
-          @import
-          url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-        </style>
-      </head>
       <body className={poppins.className}>{children}</body>
     </html>
   );

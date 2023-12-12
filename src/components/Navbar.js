@@ -1,5 +1,6 @@
 import Image from "next/image"
-
+import Link from "next/link"
+import { MdOutlineRestaurantMenu, MdPhonelinkRing } from 'react-icons/md'
 
 const Navbar = () => {
   return (
@@ -18,10 +19,13 @@ const Navbar = () => {
 
 
     <div className="navbar-links">
-        <a href="/" className="nav-link">Home</a>
-        <a href="/about" className="nav-link">About</a>
-        <a href="/menu" className="nav-link">Menu</a>
-        <a href="/contact" className="nav-link">Contact</a>
+        <Link href="/" className="nav-link">Home</Link>
+        {/* <Link href="/about" className="nav-link">About</Link> */}
+        <Link href="/menu" className="nav-link">Menu</Link>
+        {/* <Link href="/contact" className="nav-link">Contact</Link> */}
+        <a href="tel:(608) 203-5387" className='phone-number-link'>
+        <MdPhonelinkRing fontSize={27} className="phone-icon" />
+        </a>
     </div> 
   </div>
 

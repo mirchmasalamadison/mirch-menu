@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HeroDecoration from "../../public/assets/homeAssets/intro-decoration-hero.png";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -34,11 +35,13 @@ const Hero = () => {
 
         <div className="hero-buttons">
           <div className="hero-btn-container">
-            <button className="hero-menu btn">Explore Menu</button>
+            <Link href='/menu'> <button className="hero-menu btn">Explore Menu</button></Link>
+           
           </div>
 
           <div className="hero-btn-container">
-            <button className="hero-doordash btn">Doordash</button>
+          <Link href='https://www.doordash.com/store/mirchmasala-madison-977240/'><button className="hero-doordash btn">Doordash</button></Link>
+        
           </div>
         </div>
 
@@ -47,8 +50,8 @@ const Hero = () => {
     </div> */}
       </div>
 
-      <div class="triangle-left"></div>
-      <div class="triangle-right"></div>
+      <div className="triangle-left"></div>
+      <div className="triangle-right"></div>
     </section>
   );
 };
