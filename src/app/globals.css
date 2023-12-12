@@ -141,7 +141,7 @@ nav {
   display: flex;
   align-items: center;
   font-family: var(--pop);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .nav-link {
@@ -160,7 +160,7 @@ nav {
 
 /** Hero Section */
 .hero-section{
-  height: 80vh; 
+  height: 90vh; 
   position: relative;
   background: linear-gradient( rgba(0, 15, 26, 0.4), rgba(0, 0, 0, 0.6) ), url('/assets/homeAssets/hero-paneer-tikka.jpeg') no-repeat;
   background-repeat: no-repeat;
@@ -176,16 +176,22 @@ nav {
 
 
 .hero-content-container{
-  padding-top: 90px;
+  padding-top: 60px;
+  overflow: hidden;
 
 }
 
 
 .hero-section h1{
   font-family: 'Abril Fatface', serif;
+  text-transform: capitalize;
+  letter-spacing: 0.04em;
+  line-height: 117px;
   font-size: 100px;
   color: white;
+
 }
+
 
 .hero-section h3{
   font-family: 'Abril Fatface',serif;
@@ -199,8 +205,11 @@ nav {
   font-family: var(--pop);
   font-weight: 300;
   font-size: 1.5rem;
-  margin: 5rem 0;
 
+}
+
+.hero-buffet{
+  margin: 4rem 0;
 }
 
 .hero-section p{
@@ -211,17 +220,7 @@ nav {
 }
 
 
-.hero-divider {
-  position: absolute;
-  bottom: 0;
-  left: 50%; 
-  transform: translateX(-50%); 
-  width: 0;
-  height: 0;
-  border-left: 400px solid transparent; 
-  border-right: 400px solid transparent; 
-  border-bottom: 50px solid white; 
-}
+
 
 .hero-buttons{
   display: flex;
@@ -239,7 +238,7 @@ nav {
 }
 button{
   border-radius: 50px;
-  width: 40%;
+  width: 60%;
   padding: 4%;
   font-family: var(--pop);
   background: transparent;
@@ -252,4 +251,315 @@ button{
 button:hover{
   transition: .3s;
   background-color: #db9423;
+  cursor: pointer;
 }
+
+.triangle-left,
+.triangle-right {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  content: '';
+}
+
+
+.triangle-left {
+  left: 0;
+  border-right: 50vw solid transparent;
+  border-bottom: 50px solid white;
+}
+
+
+.triangle-right {
+  right: 0;
+  border-left: 50vw solid transparent;
+  border-bottom: 50px solid white;
+}
+
+
+
+
+
+
+
+/** MENU */
+
+.menu-section{
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0 ;
+}
+
+
+.menu-section p{
+   font-size: 14px;
+}
+.menu-heading{
+  padding: 2rem 0;
+  font-family: 'Abril Fatface', serif;
+  text-transform: capitalize;
+  letter-spacing: 0.04em;
+  font-size: 80px;
+  color: #db9423;
+
+}
+
+.menu-food-map{
+  text-align: center;
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+max-width: 1200px;
+margin: 0 auto;
+position: relative;
+
+}
+
+@media screen and (max-width: 900px){
+  .menu-food-map{
+      text-align: center;
+        display: grid;
+    /* grid-template-columns: 1fr; */
+    /* gap: .5em;
+    padding: .5em 0; */
+    grid-template-columns: 1fr;
+  
+  }
+  
+}
+
+
+.menu-category{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   /* border: 3px double #b49c18;
+   border-top-left-radius:20px;
+  border-top-right-radius: 20px; */
+  margin-left: 6rem;
+  margin-right: 6rem;
+  padding-top: 1.5rem;
+  margin-bottom: .5rem;
+transition: 0.3s;
+max-width: 1200px;
+margin: 0 auto;
+padding: 1.5em;
+position: relative;
+
+}
+
+.menu-buffet-dropdown{
+  position: relative;
+}
+
+/* .menu-buffet-dropdown::before {
+  content: '';
+  position: absolute;
+  transform: translateX(-50%);
+  height: 1px;
+  bottom: -5px; 
+  width: 25%; 
+  background-color: rgb(221, 176, 176); 
+} */
+
+.dining-menu-heading{
+  font-family: 'Abril Fatface', serif;
+  font-size: 40px;
+  color: #db9423;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.menu-category-heading{
+  text-align: center;
+  padding-bottom: 3px;
+  font-weight: 600;
+  font-size: 24px;
+     color: #3b3730;
+       cursor: pointer;
+}
+
+.menu-food-title{
+  color: #ba7d1d;
+  
+}
+
+.menu-category-dropdown{
+  padding-bottom: 5px;
+      margin-top: .6rem;
+  margin-left: .4rem;
+  size: 30px;
+  color: #db9423;
+
+}
+
+
+.menu-food{
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+transition: 0.3s;
+/* border-radius: 5px; */
+margin-left: 1.5rem;
+margin-right: 1.5rem; 
+padding: 5px 10px;
+margin-top: 1rem;
+margin-bottom: 1rem;
+/* border-bottom: solid 1px rgb(221, 176, 176); */
+position: relative; 
+
+/* background-color: #fbe5c7; */
+
+}
+
+.menu-food::before {
+  content: '';
+  position: absolute;
+  transform: translateX(-50%);
+  height: 1px; /* Set the desired thickness */
+  bottom: -5px; 
+  width: 33%; 
+  background-color: #2181aa;
+}
+
+/* .menu-food::before {
+  left: 0; 
+} */
+
+/* .menu-food::after {
+  right: 0; 
+} */
+
+
+/* .menu-food:hover{
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+} */
+.menu-food-header{
+  font-family: var(--pop);
+  margin-top: 1rem;
+  font-size: 20px;
+}
+
+.menu-food-text{
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  padding-left: 3.3rem;
+  padding-right: 3.3rem;
+  font-family: var(--pop);
+  font-size: 14px;
+}
+
+.menu-food-price{
+   color: #3b3730;
+
+}
+
+/** Find Us */
+
+
+
+.findus-section{
+  background-color: #fff6ea;
+  display: flex;
+  padding-top: 1px;
+  align-items: center;
+  text-align: center;
+
+}
+
+.findus-content-container{
+    text-align: center;
+    align-items: center;
+}
+
+
+.findus-section #visit-us{
+  color: black;
+}
+.findus-heading{
+    padding: 2rem 0;
+  font-family: 'Abril Fatface', serif;
+  text-transform: capitalize;
+  letter-spacing: 0.04em;
+  font-size: 45px;
+  color: #db9423;
+}
+/* 
+.findus-address{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: .5px;
+    margin-left: 1rem;
+    letter-spacing: 0.04em;
+}
+
+.findus-subtitle{
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.findus-subtitle{
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 29.9px;
+    font-size: 35px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.findus-subtitle{
+    margin-top: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    line-height: 29.9px;
+    font-size: 35px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.findus-time{
+    font-family: var(--font-alt);
+    color: var(--color-white);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 16px;
+    margin-left: 1rem;
+    color: black;
+}
+
+.findus-map{
+    border: 4px double black;
+    width: 100%;
+} 
+
+
+ */
+
+
+/** Footer */
+footer{
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  height: 6rem;
+  padding: 2rem 0;
+
+}
+
+footer p{
+  font-size: 13px;
+      color: rgb(255, 255, 255);
+}
+
+footer #web-hill{
+  color: #2181aa;
+  transition: 0.3s;
+}
+
+footer #web-hill:hover{
+  color: #2181aa;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
