@@ -1,36 +1,23 @@
-import Image from "next/image"
-import Link from "next/link"
-import {  MdPhonelinkRing } from 'react-icons/md'
+"use client";
+import DesktopNavbar from "./Navbars/DesktopNavbar";
+import MobileNavbar from "./Navbars/MobileNavbar";
+// import Image from "next/image";
 
-const Navbar = () => {
-  return (
-<nav className="navbar">
+// import { useState } from "react";
+// import Link from "next/link";
+// import { MdMenu, MdClose, MdPhonelinkRing } from "react-icons/md";
 
-  <div className="nav-container">
+const Navbar = ({ isMobile }) => {
+  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-   <div className="navbar-logo">
-        <Image 
-        className="navbar-logo-img"
-        src='./assets/mirch_logo.png'
-        width={176}
-        height={100}
-        alt="mirch masala logo"/>
-    </div>
+  // const toggleMobileMenu = () => {
+  //   setIsMobileMenuOpen(!isMobileMenuOpen);
+  // };
 
+  // const closeMobileMenu = () => {
+  //   setIsMobileMenuOpen(false);
+  // };
+  return <>{isMobile ? <MobileNavbar /> : <DesktopNavbar />} </>;
+};
 
-    <div className="navbar-links">
-        <Link href="/" className="nav-link">Home</Link>
-        {/* <Link href="/about" className="nav-link">About</Link> */}
-        <Link href="/menu" className="nav-link">Menu</Link>
-        {/* <Link href="/contact" className="nav-link">Contact</Link> */}
-        <Link href="tel:(608) 203-5387" className='phone-number-link'>
-        <MdPhonelinkRing fontSize={27} className="phone-icon" />
-        </Link>
-    </div> 
-  </div>
-
-</nav>
-  )
-}
-
-export default Navbar
+export default Navbar;

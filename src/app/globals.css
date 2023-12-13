@@ -21,7 +21,7 @@ a {
 }
 
 
-nav {
+.navbar {
   height: 75px;
   background-color: white;
   display: flex;
@@ -45,8 +45,6 @@ nav {
 }
 
 .navbar-logo {
-  font-size: 24px;
-  font-weight: bold;
   margin-top: 10px;
   vertical-align: baseline;
 }
@@ -59,7 +57,7 @@ nav {
 }
 
 .nav-link {
-  margin-right: 32px;
+  margin-right: 1rem;
   text-decoration: none;
   color: #1d1d23;
 
@@ -74,11 +72,16 @@ nav {
 .phone-number-link{
   transition: .3s;
   margin-left: 1rem;
+  color: #3b3730;
 }
 .phone-number-link:hover{
   transition: .3s;
-  color: #db9423;
+  color: #ba7d1d;
   
+}
+
+nav .phone-icon {
+  margin-right: 3rem;
 }
 
 /** Hero Section */
@@ -154,7 +157,6 @@ nav {
 
 .hero-buttons{
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -164,7 +166,7 @@ nav {
   height: 10%;
   align-items: center;
   justify-content: center;
-  margin: 40px 0px;
+   margin: 40px 0px; 
 }
 
 .hero-phone-number{
@@ -456,7 +458,6 @@ position: relative;
 }
 
 
-
 .findus-subtitle{
   font-family: 'Abril Fatface', serif;
   color: #ba7d1d;
@@ -472,7 +473,6 @@ position: relative;
   width: 128px;
   color: black;
   margin: 2rem 0;
-  padding: 1rem 0;
 }
 
 #visit-us:hover{
@@ -543,7 +543,6 @@ footer{
   background-color: #f5f5f5;
   height: 20vh;
   padding: 2rem 0;
-  border-top: white solid 12px;
 }
 footer p{
   font-size: 13px;
@@ -563,12 +562,246 @@ footer #web-hill:hover{
 }
 
 
-/* footer .footer{
-
-} */
-
-/* 
 
 
+/* Add this CSS to your existing stylesheet */
 
- */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-menu {
+  width: 100%;
+  background-color: white; 
+  padding: 20px;
+
+}
+
+.mobile-menu-links {
+  text-align: center;
+}
+
+.mobile-nav-link {
+  display: block;
+  margin: 10px 0;
+  font-size: 40px;
+  text-decoration: none;
+  color: #ba7d1d; 
+  font-family: 'Abril Fatface', serif;
+  letter-spacing: .03em;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.navbar-icons{
+  margin-right: 3rem;
+  font-size: 28px;
+}
+
+  @media (min-width: 769px) {
+  .m-nav{
+    display: none;
+  }
+
+  .mobile-navbar{
+    display: none
+  }
+
+}
+
+
+@media (min-width:950px) and (max-width:1070px) {
+  iframe{
+    width: 50vw;
+  }
+
+}
+
+@media (min-width:769.0001px) and (max-width:950px) {
+  .hero-buttons{
+   display: flex;
+   flex-direction: column;
+   /* margin: 0 auto !important; */
+   /* margin-right: 3rem !important; */
+  }
+
+  .hero-description, .hero-buffet, .hero-phone-container{
+    display: none;
+  }
+  .hero-btn-container{
+    margin-bottom: 0 !important;
+  }
+
+  .hero-content-container{
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  .findus-content-container{
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+
+  .findus-div{
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+
+  }
+
+  iframe{
+    max-width: 80vw;
+    margin: 0 auto !important;
+  }
+ }
+
+
+  @media (max-width: 769.0001px) {
+
+    /* .hero-section{
+      max-height: 50vh;
+    } */
+
+    .nav-container {
+      margin-left: 0;
+
+    }
+
+  .desktop-navbar{
+    display: none;
+  }
+
+  .hero-title, .menu-heading, .dining-menu-heading, .findus-heading{
+    font-size: 40px;
+  }
+  .hero-subtitle, .menu-category-heading{
+    font-size: 20px;
+  } 
+
+  .hero-buffet, .hero-description, .hero-phone-container{
+    display: none;
+  }
+
+  .hero-btn-container{
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 132px;
+    height: 40px;
+    margin-bottom: 1rem;
+
+  }
+
+  .hero-section button, #visit-us{
+    width: 132px;
+    height: 40px;
+     font-size: .75rem !important;
+     text-align: center !important;
+     align-items: center;
+
+  }
+  .hero-buttons{
+    display: grid;
+    margin-top: 3rem;
+    max-width: 1200px;
+  
+   
+  }
+
+  .hero-deco{
+    width: 100px !important;
+    height:17.5 !important;
+  }
+
+  .findus-content-container{
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+
+  .findus-div{
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+
+  }
+
+  iframe{
+    max-width: 80vw;
+    margin: 0 auto !important;
+  }
+
+  
+  }
+
+
+    @media (max-width: 430px) {
+
+      .hero-content-container{
+        padding-top: .5rem !important;
+      }
+
+      .hero-buttons{
+        margin-top: 1rem;
+      }
+      .hero-buttons button, #visit-us{
+      width: 132px;
+    height: 32px;
+    font-size: 10px;
+  
+      }
+
+      /* .hero-buttons{
+          margin-top: .5rem !important;
+      } */
+
+      .hero-title{
+        margin-bottom: .4rem;
+        font-size: 40px !important;
+      }
+      .hero-subtitle{
+        font-size: 20px !important;
+      }
+  .findus-content-container{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .findus-div{
+    width: 100%;
+
+  }
+
+  .findus-div p{
+     font-size: 12px;
+    line-height: 1rem;
+    margin: 0 auto;
+   /* width: 60vw;
+    margin: 0 auto; */
+    /* transform: translate(-25%); */
+  }
+
+  iframe{
+    max-width: 80vw;
+    margin: 0 auto !important;
+  }
+
+
+    }
