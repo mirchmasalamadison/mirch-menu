@@ -26,7 +26,7 @@ const Navbar = ({ isMobile }) => {
           <div className="navbar-logo">
             <Image
               className="navbar-logo-img"
-              src="/assets/mirch_logo.png"
+              src="./assets/mirch_logo.png"
               width={176}
               height={100}
               alt="mirch masala logo"
