@@ -57,7 +57,7 @@ const Hero = () => {
             </Link>
           </div>
           <div className="hero-btn-container">
-            <Link href="https://www.doordash.com/store/mirchmasala-madison-977240/">
+            <Link href="https://order.online/store/mirchmasala-madison-977240/?hideModal=true&pickup=true&redirected=true">
               <button className="hero-doordash btn">Doordash</button>
             </Link>
           </div>
